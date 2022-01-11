@@ -1,0 +1,29 @@
+{
+  "name": "eleventy-tailwind-template",
+  "version": "1.0.0",
+  "description": "Template for using Eleventy and Tailwind CSS",
+  "scripts": {
+    "start": "npm-run-all -p dev:*",
+    "build": "npx @11ty/eleventy",
+    "dev:11ty": "eleventy --serve --quiet",
+    "dev:css": "tailwindcss -i _site/css/styles.sass -o dist/css/styles.css --watch --postcss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremydaly/eleventy-tailwind-template.git"
+  },
+  "author": "Jeremy Daly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeremydaly/eleventy-tailwind-template/issues"
+  },
+  "homepage": "https://github.com/jeremydaly/eleventy-tailwind-template#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "autoprefixer": "^10.4.0",
+    "dayjs": "^1.10.7",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.0.12"
+  }
+}
