@@ -4,7 +4,7 @@
   "description": "Template for using Eleventy and Tailwind CSS",
   "scripts": {
     "start": "npm-run-all -p dev:*",
-    "build": "npx @11ty/eleventy",
+    "build": "npx @11ty/eleventy && tailwindcss -i _site/css/styles.sass -o dist/css/styles.css",
     "dev:11ty": "eleventy --serve --quiet",
     "dev:css": "tailwindcss -i _site/css/styles.sass -o dist/css/styles.css --watch --postcss"
   },
