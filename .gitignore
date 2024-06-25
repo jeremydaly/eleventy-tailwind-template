@@ -1,5 +1,6 @@
 # package directories
 node_modules
 jspm_packages
+_site
 dist
 .DS_Store

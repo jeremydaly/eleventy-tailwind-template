@@ -2,7 +2,7 @@ const dayjs = require("dayjs");
 
 module.exports = function (config) {
   // Pass-through images
-  config.addPassthroughCopy("./_site/images");
+  config.addPassthroughCopy("./src/images");
 
   // Add Date filters
   config.addFilter("date", (dateObj) => {
@@ -27,11 +27,7 @@ module.exports = function (config) {
   return {
     markdownTemplateEngine: "njk",
     dir: {
-      input: "_site",
-      data: "_data",
-      includes: "_includes",
-      layouts: "_layouts",
-      output: "dist",
+      input: "src"
     },
   };
 };
