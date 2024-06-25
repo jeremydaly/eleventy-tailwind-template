@@ -6,5 +6,5 @@ module.exports = {
   },
   variants: {},
   plugins: [],
-  content: ["./_site/**/*.{md,njk,sass}"],
+  content: ["./src/**/*.{md,njk,sass}"],
 };
